@@ -1,0 +1,275 @@
+
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+}
+
+.navbar > .container-fluid .navbar-brand {
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navbar-right {
+    margin-right: 15px;
+    margin-top: 46px;
+}
+
+.logo {
+	width: auto;
+	height: 30px;
+}
+@media (min-width: 768px) {
+	.izzi-menu-divider {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		line-height: 20px;
+		color: #0C4EAD;
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 767px) {
+	.izzi-menu-divider {
+		display: none !important;
+	}
+}
+body {
+	font-family: 'Montserrat', 'Helvetica Neue',Helvetica, sans-serif;
+	padding-top: 90px;
+    
+}
+.navbar-default .navbar-nav > li > a {
+    font-weight: bold;
+	font-size: 14px;
+	color: #353535;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+@media (max-width: 767px) {
+	.navbar-right {
+    	margin-right: 15px;
+    	margin-top: 0px;
+	}
+}
+
+.slogan-cover {
+	width:100%;
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+	.slogan-cover {
+		height: 400px;
+		padding-top: 75px;
+	}
+}
+@media (min-width: 768px) {
+	.slogan-cover {
+		height: 600px;
+		padding-top: 150px;
+	}
+}
+
+.instant-search {
+	background-image: url('../img/puzzle.png'), url('../img/instant_search.jpg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: 50% 100%, 50% center;
+	background-size: auto 56px, cover;
+}
+
+.we-know {
+	background-image: url('../img/puzzle.png'), url('../img/we_know.jpg');	
+	background-repeat: no-repeat, no-repeat;
+	background-position: 50% 100%, 50% center;
+	background-size: auto 56px, cover;
+}
+
+.one-product {
+	background-image: url('../img/puzzle.png'), url('../img/one_product.jpg');	
+	background-repeat: no-repeat, no-repeat;
+	background-position: 50% 100%, 50% center;
+	background-size: auto 56px, cover;
+}
+
+.need-more {
+	background-image: url('../img/puzzle.png'), url('../img/need_more.jpg');	
+	background-repeat: no-repeat, no-repeat;
+	background-position: 50% 100%, 50% center;
+	background-size: auto 56px, cover;
+}
+
+h1 {
+	color: white;
+	font-weight: bold;
+	letter-spacing: 0.05em
+}
+
+h2 {
+	font-size: 14pt;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	h2 {
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	h2 {
+		padding-top: 50px;
+		padding-bottom: 35px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.margin-top-100 {
+		margin-top:60px;
+	}
+}
+
+@media (min-width: 768px) {
+	.margin-top-100 {
+		margin-top:100px;
+	}
+}
+
+p {
+	font-weight: normal;
+}	
+
+@media (max-width: 767px) {
+	p {
+		font-size: 18pt;
+		line-height:30pt;
+		letter-spacing: 0.05em;
+	}
+}
+
+@media (min-width: 768px) {
+	p {
+		letter-spacing: 0.05em;
+		font-size: 12pt;
+		line-height: 24pt;
+	}
+}
+
+.footer {
+	font-size: 14pt;
+	color: #A5A5A5;
+	letter-spacing: 0.2em;
+	margin-bottom: 10px;
+}
+
+.benefits-item {
+	list-style-position: inside;
+}
+@media (max-width: 767px) {
+	.benefits-item {
+		font-size: 18pt;
+		line-height: 30pt;
+		letter-spacing: 0.05em;
+	}
+}
+
+@media (min-width: 768px) {
+	.benefits-item {
+		letter-spacing: 0.05em;
+		font-size: 12pt;
+		line-height: 24pt;
+	}
+}
+
+.form-control {
+	border-color: #1A71B9;
+}
+
+.input-lg {
+	border-radius: 0px;
+	color: #1A71B9; 
+
+}
+
+.btn {
+	font-weight: bold;
+	color: #1A71B9; 
+}
+
+.btn-lg {
+	border-color: #1A71B9;
+	background-color: white;
+	border-radius: 0px;
+	letter-spacing: 0.25em;
+	padding: 10px 32px;
+}
+
+.we-know-header-align {
+	margin-top: 70px;
+}
+
+.one-product-header-align {
+	margin-top: 100px;
+}
+
+.need-more-header-align {
+	margin-top: 100px;	
+}
+
+@media (max-width: 767px) {
+	.we-work-with-img {
+		height: 100px;
+	}
+}
+
+@media (min-width: 768px) {
+	.we-work-with-img {
+		height: 60px;
+	}
+}
+
+@media (min-width: 992px) {
+	.we-work-with-img {
+		height: 75px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.we-work-with-img {
+		height: 100px;
+	}
+}
+
+
+.we-work-with-img {
+	width: auto;
+}
+
+.puzzle-line-wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;	
+}
+
+.puzzle-line {
+	height: 75px;
+	margin: -75 auto 0;
+	vertical-align: bottom;
+
+}
