@@ -37,31 +37,51 @@
                             overflow: hidden;
                             background-color: white;
                         }
-                        .panel {
-                            left:25%;
-                            top:25%;
-                            height: 50%;
-                            width: 50%;
-                            position: absolute;
-                            border-color: black;
-                            border-width: 1px;
+                        .photoContainer {
+                            left:22%;
+                            top:17%;
+                            height: 66%;
+                            width: 600%;
+                            position:absolute;
+                            
                             background-color: white;
+                            border-width: 1px;
+                            border-color: black;
+                        
+                        }
+
+                        .panel {
+                            height: 100%;
+                            width: auto;
+                            background-color: white;
+                            float: left;
                         }
                         .photo {
                             height: 100%;
                             width: auto;
+                            margin-right: 10px;
                         }
-                        .cover {
-                            left:75%;
-                            top:25%;
-                            height: 50%;
-                            width: 25%;
+                        .cover_left {
+                            left:0%;
+                            top:16%;
+                            height: 70%;
+                            width: 22%;
+                            background-color: white;
+                            z-index: 9999;
+                            position: absolute;
+                        }
+                        .cover_right {
+                            left:69%;
+                            top:16%;
+                            height: 70%;
+                            width: 31%;
                             background-color: white;
                             z-index: 9999;
                             position: absolute;
                         }
         </style>
         <div id="pinContainer">
+            <div class="photoContainer" id="photoContainer1">
                         <section class="panel photo_1">
                             <img class="photo" src="/i/AP_H03_002.jpg">
                         </section>
@@ -98,9 +118,14 @@
                         <section class="panel photo_12">
                             <img class="photo" src="/i/AP_H03_017.jpg">
                         </section>
-                        <section class="cover">
-                        </section>
-                    </div>
+                        
+            </div>
+            <section class="cover_left">
+            </section>
+            <section class="cover_right">
+            </section>
+        </div>
+
                     <script>
                         $(function () { // wait for document ready
                             // init
@@ -108,28 +133,28 @@
 
                             // define movement of panels
                             var wipeAnimation = new TimelineMax()
-                                .fromTo("section.panel.photo_2", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-                                .fromTo("section.panel.photo_3", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
-                                .fromTo("section.panel.photo_4", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
-                                .fromTo("section.panel.photo_5", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
-                                .fromTo("section.panel.photo_6", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
-                                .fromTo("section.panel.photo_7", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
-                                .fromTo("section.panel.photo_8", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
-                                .fromTo("section.panel.photo_9", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
-                                .fromTo("section.panel.photo_10", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
-                                .fromTo("section.panel.photo_11", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
-                                .fromTo("section.panel.photo_12", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                .fromTo("#photoContainer1", 1, {x: "0%"}, {x: "100%", ease: Linear.easeNone})  // in from left
+                                //.fromTo("section.panel.photo_3", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                //.fromTo("section.panel.photo_4", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                //.fromTo("section.panel.photo_5", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                //.fromTo("section.panel.photo_6", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                //.fromTo("section.panel.photo_7", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                //.fromTo("section.panel.photo_8", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                //.fromTo("section.panel.photo_9", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                //.fromTo("section.panel.photo_10", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                //.fromTo("section.panel.photo_11", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
+                                //.fromTo("section.panel.photo_12", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in 
                                 
 
                             // create scene to pin and link animation
                             new ScrollMagic.Scene({
                                     triggerElement: "#pinContainer",
                                     triggerHook: "onLeave",
-                                    duration: "1200%"
+                                    duration: "600%"
                                 })
                                 .setPin("#pinContainer")
                                 .setTween(wipeAnimation)
-                               // .addIndicators() // add indicators (requires plugin)
+                            // .addIndicators() // add indicators (requires plugin)
                                 .addTo(controller);
                         });
                     </script>
